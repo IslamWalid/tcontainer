@@ -13,7 +13,7 @@ const ProcessesLimit = "10"
 
 func main() {
     if len(os.Args) < 3 {
-        fmt.Fprintln(os.Stderr, "to few arguments")
+        fmt.Fprintln(os.Stderr, "too few arguments")
         os.Exit(1)
     }
 
