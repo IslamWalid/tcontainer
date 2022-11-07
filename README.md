@@ -1,9 +1,13 @@
-# Container
-Simple Container implementation in go using linux namespaces and cgroups.
+# Tiny Container
+Simple container implementation in go using linux namespaces and cgroups.
 
-## Usage:
+## Usage and Installation:
+- **Install tcontainer:**
+```sh
+go install github.com/IslamWalid/tcontainer/cmd/tcontainer@latest
 ```
-git clone https://github.com/codescalersinternships/IslamWalid-container.git
-./install.sh
-sudo ./container run <command>
+- **Run the container:**
+```sh
+sudo tcontainer run <cmd> <args>
 ```
+**NOTE:** running the container for the first time may take some while for the initialization step.
