@@ -10,4 +10,4 @@ go install github.com/IslamWalid/tcontainer/cmd/tcontainer@latest
 ```sh
 sudo tcontainer run <cmd> <args>
 ```
-**NOTE:** running the container for the first time may take some while for the initialization step.
+**NOTE:** running the container for the first time may take a while for the initialization step.
