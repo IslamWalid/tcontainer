@@ -13,15 +13,15 @@ func main() {
 		os.Exit(1)
 	}
 
-	err := container.Initialize()
-	if err != nil {
-		fmt.Fprint(os.Stderr, err)
-		os.Exit(1)
-	}
-
 	switch os.Args[1] {
 	case "run":
-		err := container.Run(os.Args[2], os.Args[3:])
+		err := container.Initialize()
+		if err != nil {
+			fmt.Fprint(os.Stderr, err)
+			os.Exit(1)
+		}
+
+		err = container.Run(os.Args[2], os.Args[3:])
 		if err != nil {
 			fmt.Fprintln(os.Stderr, err.Error())
 		}
